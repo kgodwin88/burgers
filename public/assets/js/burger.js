@@ -20,13 +20,13 @@ $(function() {
         data: newDevourState
       }).then(
         function() {
-          console.log("changed devour to ", devoured);
+          console.log("changed devour to ", state);
           
           
         }
 
       );
-      
+      location.reload();
     });
     $("#burger-form").on("submit", function(event) {
         
@@ -44,7 +44,20 @@ $(function() {
         }).then(
           function() {
             console.log("created new burger");
-            // Reload the page to get the updated list
+         
+            location.reload();
+          }
+        );
+      });
+      $(".delete-burger").on("click", function(event) {
+        var id = $(this).data("id");
+        
+        $.ajax("/api/burgers/" + id, {
+          type: "DELETE"
+        }).then(
+          function() {
+            console.log("deleted burger", id);
+            
             location.reload();
           }
         );
