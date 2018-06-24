@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header text-center">
+                <img class = "image" src="/assets/img/burger.jpg" style="width:250px; height 250px">
+                <br/>
+                <h1 class = "heading">Eat-Da-Burger</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <h2 class = "heading">Burgers to Devour!</h2>
+
+            <ol>
+                {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block}} {{/unless}} {{/each}}
+            </ol>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <h2 class = "heading">Devoured Burgers!</h2>
+
+            <ol>
+                {{#each burgers}} {{#if devoured}} {{> burgers/burger-block}} {{/if}} {{/each}}
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <form id="burger-form">
+
+                    <div class="form-group">
+                        <textarea class="form-control" id="new-burger" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>

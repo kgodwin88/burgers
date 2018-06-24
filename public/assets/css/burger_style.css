@@ -1,0 +1,22 @@
+.body{
+    background-color: rgb(254,242,0);
+}
+.heading{
+    margin-bottom: 15px;
+}
+
+.food{
+    
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    margin-bottom: 5px;
+
+}
+.image{
+    margin: 20px;
+}
+.devour{
+    margin-left: 5px;
+    
+}

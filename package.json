@@ -1,0 +1,29 @@
+{
+  "name": "burgers",
+  "version": "1.0.0",
+  "description": "Burgers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgodwin88/burgers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgodwin88/burgers/issues"
+  },
+  "homepage": "https://github.com/kgodwin88/burgers#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dot-env": "0.0.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars-helper-css": "^0.1.0",
+    "mysql": "^2.15.0",
+    "path": "^0.12.7"
+  }
+}
